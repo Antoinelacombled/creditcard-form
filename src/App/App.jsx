@@ -19,7 +19,7 @@ const App = () => {
                 handleCardNumber={setCardNumber}
                 handleCardHolder={setCardHolder}
                 handleCardExpiry={setCardExpiry}
-                handleShowCardVerso={() => setShowCardVerso(!showCardVerso)}
+                handleShowCardVerso={setShowCardVerso}
             />
             {showCardVerso ? (
                 <CardVerso

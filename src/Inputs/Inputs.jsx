@@ -19,7 +19,10 @@ const Inputs = ({
                     value={cardNumber}
                     placeholder="Card Number"
                     onChange={(e) => handleCardNumber(e.target.value)}
-                    onFocus={() => handleCardNumber('')}
+                    onFocus={() => {
+                        handleShowCardVerso(false);
+                        handleCardNumber('')
+                    }}
                 />
             </div>
             <div className="input-group">
